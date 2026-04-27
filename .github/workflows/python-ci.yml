@@ -33,8 +33,11 @@ jobs:
             ${{ runner.os }}-pip-${{ matrix.python-version }}-
             ${{ runner.os }}-pip-
 
-      - name: Install package and test dependencies
-        run: pip install ".[dev]"
+      - name: Install package
+        run: pip install .
+
+      - name: Install test dependencies
+        run: pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest
+        run: python -m pytest
