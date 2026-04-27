@@ -9,7 +9,7 @@
 
 No API keys. No LLMs. No external services. Runs in seconds.
 
-LarpMyResume audits your resume PDF for ATS parse reliability, scores your bullet points against an evidence-graded rubric, and compares your skills against any job description — entirely offline, entirely deterministically.
+LarpMyResume audits your resume PDF for ATS parse reliability, scores your bullet points against an evidence-graded rubric, and compares your skills against any job description entirely offline, entirely deterministically.
 
 > **Origin story:** This was originally going to be a Claude Code skill that called an LLM on every resume scan. Then I looked at my token usage and decided I'm not that rich. Everything is deterministic rules and regex now which honestly works better anyway.
 
@@ -17,7 +17,7 @@ LarpMyResume audits your resume PDF for ATS parse reliability, scores your bulle
 
 ## The Research Behind It
 
-The scoring rules, thresholds, and flags in this tool are grounded in peer-reviewed research on recruiter behavior, ATS parsing, and candidate screening — not convention or guesswork.
+The scoring rules, thresholds, and flags in this tool are grounded in peer-reviewed research on recruiter behavior, ATS parsing, and candidate screening.
 
 See **[RESEARCH.md](RESEARCH.md)** for the full evidence base: a synthesis of ATS vendor documentation, eye-tracking studies, hiring outcome research, and legal guidance on Canadian and US hiring practices. If you disagree with a rule, that's where to look — and where to open a PR if you have better evidence.
 
