@@ -11,7 +11,7 @@ No API keys. No LLMs. No external services. Runs in seconds.
 
 LarpMyResume audits your resume PDF for ATS parse reliability, scores your bullet points against an evidence-graded rubric, and compares your skills against any job description — entirely offline, entirely deterministically.
 
-> **Origin story:** This was originally going to be a Claude Code skill that called an LLM on every resume scan. Then I looked at my token usage and decided I'm not that rich. Everything is deterministic rules and regex now — which honestly works better anyway.
+> **Origin story:** This was originally going to be a Claude Code skill that called an LLM on every resume scan. Then I looked at my token usage and decided I'm not that rich. Everything is deterministic rules and regex now which honestly works better anyway.
 
 ---
 
@@ -54,7 +54,7 @@ See **[RESEARCH.md](RESEARCH.md)** for the full evidence base: a synthesis of AT
 pip install larp-my-resume
 ```
 
-### Ruby Report Generator (optional — for HTML reports)
+### Ruby Report Generator (optional: for HTML reports)
 
 ```bash
 gem install larp-my-resume-report
@@ -64,7 +64,7 @@ gem install larp-my-resume-report
 
 ## Usage
 
-**ATS audit — scan your resume:**
+**ATS audit: scan your resume:**
 
 ```bash
 larp-my-resume scan resume.pdf
@@ -82,7 +82,7 @@ larp-my-resume match resume.pdf --job-url "https://jobs.example.com/posting"
 larp-my-resume match resume.pdf --job-text job.txt
 ```
 
-**Full pipeline — JSON output piped to an HTML report:**
+**Full pipeline: JSON output piped to an HTML report:**
 
 ```bash
 larp-my-resume match resume.pdf --job-url "https://jobs.example.com/posting" --json \
@@ -102,9 +102,9 @@ larp-my-resume --json match resume.pdf --job-text job.txt
 
 `pdfplumber` extracts character-level text from your resume PDF. A column-detection heuristic clusters character x-positions to flag multi-column layouts. Rule-based analyzers run against the extracted text:
 
-- **ATS checker** — regex patterns and structural heuristics against known ATS failure modes
-- **Bullet scorer** — verb lists, metric patterns, and flag rules derived from the research in `RESEARCH.md`
-- **Keyword matcher** — a curated skill gazetteer with short-token disambiguation and importance weighting
+- **ATS checker**: regex patterns and structural heuristics against known ATS failure modes
+- **Bullet scorer**: verb lists, metric patterns, and flag rules derived from the research in `RESEARCH.md`
+- **Keyword matcher**: a curated skill gazetteer with short-token disambiguation and importance weighting
 
 The Ruby gem (`larp-my-resume-report`) reads the JSON output and renders a self-contained HTML report with inline CSS — no JavaScript, no external resources.
 
@@ -130,7 +130,7 @@ Tests require no network access and no API keys. All test fixtures are programma
 
 ## Contributing
 
-MIT licensed — issues and PRs welcome.
+MIT licensed - issues and PRs welcome.
 
 Open an issue before submitting large changes: [github.com/B2707/LarpMyResume/issues](https://github.com/B2707/LarpMyResume/issues)
 
