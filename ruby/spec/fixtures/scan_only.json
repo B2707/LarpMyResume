@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-04-25T00:00:00+00:00",
+  "resume_file": "tests/fixtures/real_resume.pdf",
+  "job_url": null,
+  "overall_score": 68,
+  "ats_section_score": 75,
+  "sections": {"Experience": [], "Education": [], "Skills": []},
+  "ats_flags": [
+    {
+      "flag": "non_standard_heading:Leadership",
+      "severity": "Medium",
+      "explanation": "Heading 'Leadership' is not a standard ATS section name."
+    }
+  ],
+  "bullets": [
+    {
+      "score": 60,
+      "text": "Worked on backend services for internal tooling",
+      "flags": ["weak_verb"],
+      "has_action_verb": false,
+      "has_metric": false,
+      "section": "Experience"
+    }
+  ],
+  "bullets_summary": {
+    "total": 1,
+    "avg_score": 60.0,
+    "flagged_count": 1,
+    "anti_ai_score": 0,
+    "anti_ai_flags": []
+  },
+  "keyword_match": null,
+  "score_breakdown": {
+    "ats_score": 75,
+    "bullet_score": 60.0,
+    "keyword_score": null,
+    "overall_score": 68
+  }
+}

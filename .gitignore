@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.env
+
+# Coverage
+.coverage
+htmlcov/
+coverage.xml
+
+# Distribution
+*.whl
+*.tar.gz
+
+# macOS
+.DS_Store
+
+# Ruby
+ruby/.bundle/
+ruby/vendor/
+ruby/pkg/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
